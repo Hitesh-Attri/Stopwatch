@@ -28,9 +28,16 @@ displayPtag.innerText = str;
 
 lapBtn.addEventListener('click',function(){
     if(!isLap){
-        alert("reset");
+        // alert("reset");
         lapTimingData.innerHTML="";
-        str="00 : 00 : 00";
+        str = "00 : 00 : 00";
+        displayPtag.innerText = str;
+        
+        hours = 0;
+        minutes = 0;
+        seconds = 0;
+        milSec = 0;
+
         stopStopWatch();
     }
     else{
@@ -107,15 +114,16 @@ function timer(){
         minutes = 0;
         hours += 1;
     }
-    if(hours<10){
-        hStr = "0"+hours;
-    }
-    if(minutes<10){
-        mStr = "0"+minutes;
-    }
-    if(seconds<10){
-        sStr = "0"+seconds;
-    }
+    
+    if(hours<10) hStr = "0"+hours;
+    else hStr = "" + hours;
+
+    if(minutes<10) mStr = "0"+minutes;
+    else mStr = "" + minutes;
+
+    if(seconds<10) sStr = "0"+seconds;
+    else sStr = "" + seconds;
+
     str = hStr + " : " + mStr + " : " + sStr;
     displayPtag.innerText = str;
     id = setTimeout(timer,1000);
