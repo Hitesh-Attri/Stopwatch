@@ -63,7 +63,7 @@ h2{
     justify-content: space-between;
     align-items: center;
     position: relative;
-    margin-top: 12%;
+    margin-top: 3%;
     background-color: rgb(49, 47, 47);
     /* background-color:azure; */
     height: 15%;
@@ -97,7 +97,14 @@ h2{
     color: rgb(91, 11, 11);
 }
 
-.timing-data{
+#timing-data{
     overflow: auto;
+    position: relative;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    background-color:rgb(72, 88, 88);
+    height: 80%;
+    width: 80%;
+    border-radius: 0.5rem;
+    box-shadow: 0.2rem 0.2rem 1rem 0.12rem rgb(55, 156, 214);
 }
-
