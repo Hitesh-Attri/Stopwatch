@@ -1,0 +1,75 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.main-div{
+    /* position: absolute; */
+    background-color: rgb(127, 123, 123);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-shrink: 1;
+}
+
+.watch-div{
+    position: absolute;
+    background-color: rgb(49, 47, 47);
+    /* top: 50%; */
+    /* left: 50%; */
+    height: 70vh;
+    width: 40vw;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    box-shadow: 0.2rem 0.2rem 1rem 0.12rem rgb(55, 156, 214);
+}
+
+h2{
+    flex-shrink: 2;
+    position: absolute;
+    top:5%
+    /* margin-bottom: 2rem; */
+}
+
+.display-div{
+    position: relative;
+    margin-top: 12%;
+    background-color:azure;
+    height: 15%;
+    width: 80%;
+    border-radius: 0.5rem;
+    box-shadow: 0.2rem 0.2rem 1rem 0.12rem rgb(55, 156, 214);
+}
+
+.watch-btns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-top: 12%;
+    /* background-color: rgb(49, 47, 47); */
+    background-color:azure;
+    height: 15%;
+    width: 80%;
+    border-radius: 0.5rem;
+    /* box-shadow: 0.2rem 0.2rem 1rem 0.12rem rgb(55, 156, 214); */
+}
+
+#lapBtn, #stopBtn{
+    border-radius: 50%;
+    margin: 0 1rem 0 1rem;
+    padding: 1rem 1rem 1rem 1rem;
+    cursor: pointer;
+    /* outline: none; */
+    border: 0;
+
+    
+
+}
+
