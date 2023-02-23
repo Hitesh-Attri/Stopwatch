@@ -40,11 +40,22 @@ h2{
 .display-div{
     position: relative;
     margin-top: 12%;
-    background-color:azure;
+    background-color:rgb(72, 88, 88);
     height: 15%;
     width: 80%;
     border-radius: 0.5rem;
     box-shadow: 0.2rem 0.2rem 1rem 0.12rem rgb(55, 156, 214);
+}
+
+.display-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.display-div p{
+    font-size:250%;
+    color: rgb(230, 221, 221);
 }
 
 .watch-btns{
@@ -53,8 +64,8 @@ h2{
     align-items: center;
     position: relative;
     margin-top: 12%;
-    /* background-color: rgb(49, 47, 47); */
-    background-color:azure;
+    background-color: rgb(49, 47, 47);
+    /* background-color:azure; */
     height: 15%;
     width: 80%;
     border-radius: 0.5rem;
@@ -62,14 +73,31 @@ h2{
 }
 
 #lapBtn, #stopBtn{
-    border-radius: 50%;
+    border-radius: 100%;
     margin: 0 1rem 0 1rem;
     padding: 1rem 1rem 1rem 1rem;
     cursor: pointer;
     /* outline: none; */
     border: 0;
+}
 
-    
+#lapBtn{
+    color: white;
+    font-weight: bold;
+    background-color: grey;
+}
 
+#stopBtn{
+    background-color: rgb(167, 86, 86);
+    font-weight: bold;
+    color: white;
+}
+
+#stopBtn:hover,#lapBtn:hover{
+    color: rgb(91, 11, 11);
+}
+
+.timing-data{
+    overflow: auto;
 }
 
